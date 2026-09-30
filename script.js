@@ -242,14 +242,20 @@ fetch('resume.pdf', { method: 'HEAD' }).then(r => { if (!r.ok) throw 0; }).catch
 /* ---------- Ads Manager proof screenshots (lightbox) ---------- */
 const lb = document.createElement('div');
 lb.className = 'lightbox';
-lb.innerHTML = '<button class="lb-close" aria-label="Close">×</button><img alt="Ads Manager report">';
+lb.innerHTML = '<button class="lb-close" aria-label="Close">×</button><div class="lb-imgs"></div>';
 document.body.append(lb);
-const closeLb = () => lb.classList.remove('open');
-lb.addEventListener('click', e => { if (e.target !== lb.querySelector('img')) closeLb(); });
+const lbImgs = lb.querySelector('.lb-imgs');
+const closeLb = () => { lb.classList.remove('open'); document.body.style.overflow = ''; };
+lb.addEventListener('click', e => { if (e.target.tagName !== 'IMG') closeLb(); });
 addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
 $$('.proof-btn').forEach(btn => {
+  const srcs = btn.dataset.proof.split(',');
   const probe = new Image();
   probe.onerror = () => btn.classList.add('missing');   // hide until the screenshot is added
-  probe.src = btn.dataset.proof;
-  btn.addEventListener('click', () => { lb.querySelector('img').src = btn.dataset.proof; lb.classList.add('open'); });
+  probe.src = srcs[0];
+  btn.addEventListener('click', () => {
+    lbImgs.innerHTML = srcs.map(s => `<img src="${s}" alt="Meta Ads Manager report">`).join('');
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
 });
