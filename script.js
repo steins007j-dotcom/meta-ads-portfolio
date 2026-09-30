@@ -135,7 +135,7 @@ const cio = new IntersectionObserver(entries => entries.forEach(e => {
   const t0 = performance.now();
   const tick = now => {
     const k = Math.min((now - t0) / 1800, 1);
-    el.textContent = pre + (end * (1 - Math.pow(1 - k, 4))).toFixed(dec) + suf;
+    el.textContent = pre + (end * (1 - Math.pow(1 - k, 4))).toLocaleString('en-IN', { minimumFractionDigits: dec, maximumFractionDigits: dec }) + suf;
     if (k < 1) requestAnimationFrame(tick);
   };
   requestAnimationFrame(tick);
@@ -237,4 +237,19 @@ $('#year').textContent = new Date().getFullYear();
 /* Until resume.pdf is uploaded, CV buttons point to the contact section */
 fetch('resume.pdf', { method: 'HEAD' }).then(r => { if (!r.ok) throw 0; }).catch(() => {
   $$('a[href="resume.pdf"]').forEach(a => { a.href = '#contact'; a.removeAttribute('download'); });
+});
+
+/* ---------- Ads Manager proof screenshots (lightbox) ---------- */
+const lb = document.createElement('div');
+lb.className = 'lightbox';
+lb.innerHTML = '<button class="lb-close" aria-label="Close">×</button><img alt="Ads Manager report">';
+document.body.append(lb);
+const closeLb = () => lb.classList.remove('open');
+lb.addEventListener('click', e => { if (e.target !== lb.querySelector('img')) closeLb(); });
+addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
+$$('.proof-btn').forEach(btn => {
+  const probe = new Image();
+  probe.onerror = () => btn.classList.add('missing');   // hide until the screenshot is added
+  probe.src = btn.dataset.proof;
+  btn.addEventListener('click', () => { lb.querySelector('img').src = btn.dataset.proof; lb.classList.add('open'); });
 });
