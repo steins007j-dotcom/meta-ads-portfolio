@@ -3,299 +3,361 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Steins | Meta Ads That Print Money</title>
-  <meta name="description" content="Meta Ads specialist in Bengaluru. Facebook and Instagram campaigns that bring sales, leads and real ROAS.">
+  <title>Steins | Performance Marketer, Meta Ads</title>
+  <meta name="description" content="Performance marketer specialising in Meta Ads. Facebook and Instagram campaigns for D2C, healthcare and local brands across India.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="cursor" id="cursor"><span id="cursorText"></span></div>
-<div class="grain" aria-hidden="true"></div>
+<div class="progress" id="progress"></div>
+<div class="cursor-dot" id="dot"></div>
+<div class="cursor-ring" id="ring"></div>
 
-<!-- LOADER -->
+<!-- Loader -->
 <div class="loader" id="loader">
-  <div class="loader-num"><span id="loadNum">0</span>%</div>
-  <div class="loader-txt">Loading ROAS</div>
+  <div class="loader-inner">
+    <div class="loader-name">Steins<span>.</span></div>
+    <div class="loader-bar"><i id="loadBar"></i></div>
+  </div>
 </div>
 
 <header class="nav" id="nav">
-  <a href="#top" class="logo">STEINS<sup>®</sup></a>
-  <nav class="nav-links" id="navLinks">
-    <a href="#work">Work</a>
-    <a href="#calc">Calculator</a>
-    <a href="#services">Services</a>
-    <a href="#creatives">Creatives</a>
-  </nav>
-  <a href="#contact" class="nav-cta magnetic">Let's scale <span>→</span></a>
-  <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span></button>
+  <div class="wrap nav-inner">
+    <a href="#top" class="logo">Steins<span>.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="resume.pdf" class="btn btn-sm magnetic" download>Download CV</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span></button>
+  </div>
 </header>
 
 <main id="top">
 
   <!-- HERO -->
   <section class="hero">
-    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+    <div class="hero-bg"><div class="orb o1"></div><div class="orb o2"></div><div class="grid-lines"></div></div>
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="avail"><span class="pulse"></span> Open to full-time roles</p>
+        <h1 class="split">Performance marketer who <i class="serif">scales brands</i> on Meta.</h1>
+        <p class="lead fade-up">I plan, launch and optimise Facebook and Instagram campaigns that drive sales and qualified leads. Hands-on across 40+ brands in D2C, healthcare, real estate and local services.</p>
+        <div class="hero-cta fade-up">
+          <a href="#work" class="btn magnetic">View my work <span class="arr">→</span></a>
+          <a href="resume.pdf" class="btn btn-line magnetic" download>Download CV</a>
+        </div>
+        <div class="hero-meta fade-up">
+          <div><b>3+ yrs</b><span>Meta Ads</span></div>
+          <div><b>Bengaluru</b><span>Open to hybrid / remote</span></div>
+        </div>
+      </div>
 
-    <div class="hero-text">
-      <h1 class="mega">
-        <span class="line"><span>Ads that</span></span>
-        <span class="line"><span><i class="serif">print</i> <span class="outline">money</span></span></span>
-        <span class="line"><span>on Meta<span class="lime">.</span></span></span>
-      </h1>
-      <div class="hero-bottom">
-        <p>I run Facebook &amp; Instagram ads for brands that want sales, not just likes. Sharp targeting. Thumb-stopping creatives. Numbers you can take to the bank.</p>
-        <a href="#work" class="btn-round magnetic" data-cursor="View">
-          <svg viewBox="0 0 200 200"><defs><path id="circ" d="M100,100 m-75,0 a75,75 0 1,1 150,0 a75,75 0 1,1 -150,0"/></defs><text><textPath href="#circ">SEE THE RESULTS · SEE THE RESULTS · </textPath></text></svg>
-          <b>↓</b>
-        </a>
+      <div class="hero-visual">
+        <div class="phone" id="phone">
+          <div class="notch"></div>
+          <div class="screen">
+            <div class="reel" id="reel">
+              <div class="reel-bar"><i></i><i></i><i></i></div>
+              <div class="reel-top"><span class="ra"></span><b id="reelBrand">aurum.men</b><small>Sponsored</small></div>
+              <div class="reel-big" id="reelHook">Silver that<br>doesn't fade.</div>
+              <div class="reel-side"><span>♥<small id="likes">12.4K</small></span><span>💬<small>842</small></span><span>➤<small>2.1K</small></span></div>
+              <div class="reel-cta" id="reelCta">Shop now</div>
+            </div>
+          </div>
+        </div>
+        <div class="float-card fc1">
+          <small>Return on ad spend</small>
+          <div class="fc-row"><b>4.9x</b><span class="up">▲ 250%</span></div>
+          <svg viewBox="0 0 120 36"><path class="draw" d="M0,32 L15,28 L30,30 L45,22 L60,24 L75,14 L90,16 L105,6 L120,4" fill="none" stroke="#1877f2" stroke-width="2.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="float-card fc2">
+          <div class="fc-icon">✓</div>
+          <div><b>New purchase</b><small>₹2,499 · via Instagram Reels</small></div>
+        </div>
+        <div class="float-card fc3">
+          <small>Cost per lead</small>
+          <div class="fc-row"><b>₹186</b><span class="up">▼ 41%</span></div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <!-- PHONE -->
-    <div class="phone-zone">
-      <div class="phone" id="phone">
-        <div class="notch"></div>
-        <div class="screen">
-          <div class="reel" id="reel">
-            <div class="reel-bar"><i></i><i></i><i></i></div>
-            <div class="reel-top"><span class="ra"></span><b id="reelBrand">aurum.men</b><small>Sponsored</small></div>
-            <div class="reel-big" id="reelHook">Silver that<br>doesn't fade.</div>
-            <div class="reel-side">
-              <span>♥<small id="likes">12.4K</small></span>
-              <span>💬<small>842</small></span>
-              <span>➤<small>2.1K</small></span>
-            </div>
-            <div class="reel-cta" id="reelCta">Shop now ›</div>
+  <!-- TOOLS MARQUEE -->
+  <section class="tools">
+    <p class="tools-label">Tools I work with every day</p>
+    <div class="marquee"><div class="track">
+      <span>Meta Ads Manager</span><span>Events Manager</span><span>Conversions API</span><span>Meta Business Suite</span><span>Google Analytics 4</span><span>Google Tag Manager</span><span>Shopify</span><span>WordPress</span><span>Looker Studio</span><span>Canva</span><span>CapCut</span>
+      <span>Meta Ads Manager</span><span>Events Manager</span><span>Conversions API</span><span>Meta Business Suite</span><span>Google Analytics 4</span><span>Google Tag Manager</span><span>Shopify</span><span>WordPress</span><span>Looker Studio</span><span>Canva</span><span>CapCut</span>
+    </div></div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-sec">
+    <div class="wrap stats">
+      <div class="stat reveal"><b data-count="2" data-prefix="₹" data-suffix=" Cr+">0</b><span>Ad spend managed</span></div>
+      <div class="stat reveal"><b data-count="40" data-suffix="+">0</b><span>Brands and accounts</span></div>
+      <div class="stat reveal"><b data-count="4.3" data-dec="1" data-suffix="x">0</b><span>Average ROAS delivered</span></div>
+      <div class="stat reveal"><b data-count="38" data-suffix="%">0</b><span>Average drop in CPA</span></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="wrap about">
+      <div class="reveal">
+        <p class="eyebrow">About me</p>
+        <h2 class="h2">Data-driven, creative-minded and <i class="serif">accountable</i> for results.</h2>
+      </div>
+      <div class="about-body reveal">
+        <p>I'm a performance marketer based in Bengaluru, working at The Website Makers where I manage Meta Ads for clients across jewellery, skincare, healthcare, food, interiors and fashion.</p>
+        <p>My work covers the full funnel: tracking setup with Pixel and Conversions API, audience and campaign structure, creative briefs for Reels and statics, daily optimisation and clear weekly reporting. I care about revenue and cost per result, not vanity metrics.</p>
+        <ul class="checks">
+          <li>Full-funnel campaign strategy</li>
+          <li>Budget pacing from ₹500/day to ₹50K/day</li>
+          <li>Creative testing frameworks</li>
+          <li>Client reporting and communication</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section soft">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="eyebrow">Experience</p>
+        <h2 class="h2">Where I've worked</h2>
+      </div>
+      <div class="timeline" id="timeline">
+        <div class="tl-line"><i id="tlFill"></i></div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-date">2023 to Present</div>
+          <div class="tl-card">
+            <h3>Performance Marketing Executive, Meta Ads</h3>
+            <p class="tl-co">The Website Makers · Bengaluru</p>
+            <ul>
+              <li>Manage Meta Ads for 15+ active client accounts with monthly spend of ₹5L+.</li>
+              <li>Improved average ROAS from 2.1x to 4.3x across D2C accounts by restructuring campaigns and creative testing.</li>
+              <li>Set up Pixel, Conversions API and event tracking for Shopify and WordPress stores.</li>
+              <li>Write ad copy and Reels scripts, and brief designers on creatives every week.</li>
+            </ul>
+            <div class="tags"><span>Advantage+</span><span>CAPI</span><span>Lead Ads</span><span>Catalogue Ads</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-date">2022 to 2023</div>
+          <div class="tl-card">
+            <h3>Digital Marketing Associate</h3>
+            <p class="tl-co">Company Name · City</p>
+            <ul>
+              <li>Ran lead generation campaigns for local businesses and clinics.</li>
+              <li>Handled social media calendars, content and community replies.</li>
+              <li>Built weekly reports in Looker Studio for 8 clients.</li>
+            </ul>
+            <div class="tags"><span>Lead Gen</span><span>Social Media</span><span>Reporting</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-date">2018 to 2022</div>
+          <div class="tl-card">
+            <h3>Bachelor's Degree</h3>
+            <p class="tl-co">College / University Name · City</p>
+            <ul><li>Add your course, specialisation and any marketing projects here.</li></ul>
           </div>
         </div>
       </div>
-
-      <div class="sticker s1 drag"><small>ROAS</small><b>4.9x</b></div>
-      <div class="sticker s2 drag"><small>Cost per lead</small><b>₹186</b></div>
-      <div class="sticker s3 drag"><b>+146%</b><small>revenue</small></div>
-      <div class="sticker s4 drag">🔥 New sale!<small>Someone in Pune bought 2 items</small></div>
-      <p class="drag-hint">← drag the stickers</p>
     </div>
   </section>
 
-  <!-- CROSSED MARQUEES -->
-  <section class="cross">
-    <div class="band band-a"><div class="band-track">
-      <span>Sales ✺ Leads ✺ ROAS ✺ Reels ✺ Retargeting ✺ Lookalikes ✺ CAPI ✺ Advantage+ ✺ </span><span>Sales ✺ Leads ✺ ROAS ✺ Reels ✺ Retargeting ✺ Lookalikes ✺ CAPI ✺ Advantage+ ✺ </span>
-    </div></div>
-    <div class="band band-b"><div class="band-track rev">
-      <span>No fluff ● No vanity metrics ● Just revenue ● No fluff ● No vanity metrics ● Just revenue ● </span><span>No fluff ● No vanity metrics ● Just revenue ● No fluff ● No vanity metrics ● Just revenue ● </span>
-    </div></div>
-  </section>
-
-  <!-- BIG NUMBERS -->
-  <section class="numbers">
-    <p class="kicker">( The receipts )</p>
-    <div class="num-grid">
-      <div class="num"><b data-count="2" data-prefix="₹" data-suffix="Cr+">0</b><span>ad spend managed without burning it</span></div>
-      <div class="num"><b data-count="43" data-suffix="+">0</b><span>brands scaled across India, UK &amp; US</span></div>
-      <div class="num"><b data-count="4.3" data-dec="1" data-suffix="x">0</b><span>average return on ad spend</span></div>
-      <div class="num"><b data-count="38" data-prefix="-" data-suffix="%">0</b><span>average drop in cost per purchase</span></div>
-    </div>
-  </section>
-
-  <!-- HORIZONTAL CASE STUDIES -->
-  <section id="work" class="hscroll" data-cursor="Drag">
+  <!-- CASE STUDIES: HORIZONTAL -->
+  <section id="work" class="hscroll">
     <div class="hs-sticky">
-      <div class="hs-head">
-        <h2 class="h2">Selected <i class="serif">wins</i></h2>
-        <div class="hs-progress"><i id="hsBar"></i></div>
+      <div class="wrap hs-head">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2 class="h2">Case studies</h2>
+        </div>
+        <div class="hs-count"><b id="hsNow">01</b> / 05<div class="hs-progress"><i id="hsBar"></i></div></div>
       </div>
       <div class="hs-track" id="hsTrack">
 
-        <article class="cs" style="--c1:#d4ff3a;--c2:#0b0b0b">
-          <div class="cs-idx">01</div>
-          <div class="cs-cat">Men's Jewellery · D2C</div>
-          <h3>1.4x → <span>4.9x</span> ROAS in 60 days</h3>
-          <p>Killed 11 overlapping ad sets, moved everything into one Advantage+ campaign and shipped 20 UGC creatives a month.</p>
-          <div class="bars"><div style="--h:28%"><small>Before</small></div><div style="--h:98%"><small>After</small></div></div>
-          <div class="cs-m"><span><b>-52%</b>CPA</span><span><b>₹1K/day</b>budget</span></div>
+        <article class="cs">
+          <div class="cs-top"><span class="cs-tag">D2C · Men's Jewellery</span><span class="cs-obj">Objective: Sales</span></div>
+          <h3>Scaled ROAS from 1.4x to 4.9x in 60 days</h3>
+          <div class="cs-cols">
+            <div><h4>Challenge</h4><p>11 overlapping ad sets competing for the same audience and creatives that were months old.</p></div>
+            <div><h4>What I did</h4><p>Consolidated into one Advantage+ Shopping campaign and introduced 20 UGC-style creatives a month.</p></div>
+          </div>
+          <div class="cs-chart"><div class="bar" style="--h:28%"><span>1.4x</span><small>Before</small></div><div class="bar hi" style="--h:96%"><span>4.9x</span><small>After</small></div></div>
+          <div class="cs-m"><div><b>4.9x</b>ROAS</div><div><b>-52%</b>CPA</div><div><b>₹1K</b>per day</div></div>
         </article>
 
-        <article class="cs" style="--c1:#ff4fd8;--c2:#1a0015">
-          <div class="cs-idx">02</div>
-          <div class="cs-cat">Hair Transplant Clinic</div>
-          <h3><span>312</span> consults booked in one quarter</h3>
-          <p>Instant forms with a qualifying question, WhatsApp follow up in 5 minutes and policy safe before/after carousels.</p>
-          <div class="bars"><div style="--h:40%"><small>Q1</small></div><div style="--h:65%"><small>Q2</small></div><div style="--h:100%"><small>Q3</small></div></div>
-          <div class="cs-m"><span><b>₹186</b>per lead</span><span><b>27%</b>close rate</span></div>
+        <article class="cs">
+          <div class="cs-top"><span class="cs-tag">Healthcare · Hair Clinic</span><span class="cs-obj">Objective: Leads</span></div>
+          <h3>312 qualified consultations in one quarter</h3>
+          <div class="cs-cols">
+            <div><h4>Challenge</h4><p>Cheap leads that never picked up the phone, and strict policy limits on before/after content.</p></div>
+            <div><h4>What I did</h4><p>Added a qualifying question to the instant form, WhatsApp follow-up within 5 minutes and compliant creatives.</p></div>
+          </div>
+          <div class="cs-chart"><div class="bar" style="--h:40%"><span>74</span><small>Month 1</small></div><div class="bar" style="--h:65%"><span>108</span><small>Month 2</small></div><div class="bar hi" style="--h:96%"><span>130</span><small>Month 3</small></div></div>
+          <div class="cs-m"><div><b>₹186</b>per lead</div><div><b>312</b>consults</div><div><b>27%</b>close rate</div></div>
         </article>
 
-        <article class="cs" style="--c1:#ff7a1a;--c2:#1c0a00">
-          <div class="cs-idx">03</div>
-          <div class="cs-cat">Saffron Brand · Festive</div>
-          <h3>Sold out <span>6 days</span> before Diwali</h3>
-          <p>Gifting angle, 8 videos tested in week one, then all the money went to the two winners.</p>
-          <div class="bars"><div style="--h:20%"><small>W1</small></div><div style="--h:55%"><small>W2</small></div><div style="--h:100%"><small>W3</small></div></div>
-          <div class="cs-m"><span><b>5.6x</b>ROAS</span><span><b>1,940</b>orders</span></div>
+        <article class="cs">
+          <div class="cs-top"><span class="cs-tag">D2C · Saffron Brand</span><span class="cs-obj">Objective: Sales</span></div>
+          <h3>Festive campaign sold out 6 days early</h3>
+          <div class="cs-cols">
+            <div><h4>Challenge</h4><p>Short Diwali window and a premium price point in a crowded gifting category.</p></div>
+            <div><h4>What I did</h4><p>Tested 8 gifting-angle videos in week one, then moved the budget to the two top performers.</p></div>
+          </div>
+          <div class="cs-chart"><div class="bar" style="--h:22%"><small>Week 1</small></div><div class="bar" style="--h:55%"><small>Week 2</small></div><div class="bar hi" style="--h:96%"><small>Week 3</small></div></div>
+          <div class="cs-m"><div><b>5.6x</b>ROAS</div><div><b>1,940</b>orders</div><div><b>₹11</b>CPC</div></div>
         </article>
 
-        <article class="cs" style="--c1:#4f7bff;--c2:#000a24">
-          <div class="cs-idx">04</div>
-          <div class="cs-cat">Fabric Store · Pan India</div>
-          <h3>Catalogue ads that <span>finally scaled</span></h3>
-          <p>Cleaned the product feed, grouped fabrics by use and ran dynamic retargeting with a free swatch offer.</p>
-          <div class="bars"><div style="--h:40%"><small>Before</small></div><div style="--h:100%"><small>After</small></div></div>
-          <div class="cs-m"><span><b>+146%</b>revenue</span><span><b>3.8x</b>ROAS</span></div>
+        <article class="cs">
+          <div class="cs-top"><span class="cs-tag">E-commerce · Fabrics</span><span class="cs-obj">Objective: Sales</span></div>
+          <h3>Catalogue ads that grew revenue 146%</h3>
+          <div class="cs-cols">
+            <div><h4>Challenge</h4><p>A messy product feed with 900+ SKUs and no retargeting in place.</p></div>
+            <div><h4>What I did</h4><p>Cleaned the feed, built product sets by use case and launched dynamic retargeting with a swatch offer.</p></div>
+          </div>
+          <div class="cs-chart"><div class="bar" style="--h:40%"><small>Before</small></div><div class="bar hi" style="--h:96%"><small>After</small></div></div>
+          <div class="cs-m"><div><b>+146%</b>revenue</div><div><b>3.8x</b>ROAS</div><div><b>2.1%</b>CTR</div></div>
         </article>
 
-        <article class="cs" style="--c1:#f4efe6;--c2:#141414">
-          <div class="cs-idx">05</div>
-          <div class="cs-cat">Luxury Interiors · Bengaluru</div>
-          <h3><span>18x</span> return from an 8 km radius</h3>
-          <p>Ads only around premium apartments, walkthrough Reels of finished homes and a form that asks budget first.</p>
-          <div class="bars"><div style="--h:12%"><small>Spend</small></div><div style="--h:100%"><small>Revenue</small></div></div>
-          <div class="cs-m"><span><b>9</b>projects signed</span><span><b>₹640</b>per lead</span></div>
-        </article>
-
-        <article class="cs cs-end">
-          <h3>Your brand<br><i class="serif">could be next.</i></h3>
-          <a href="#contact" class="btn-lime magnetic">Get a free audit →</a>
+        <article class="cs">
+          <div class="cs-top"><span class="cs-tag">Local · Interior Design</span><span class="cs-obj">Objective: Leads</span></div>
+          <h3>High-ticket leads from an 8 km radius</h3>
+          <div class="cs-cols">
+            <div><h4>Challenge</h4><p>Leads were coming in, but most had budgets far below the studio's minimum project size.</p></div>
+            <div><h4>What I did</h4><p>Radius targeting around premium apartments, walkthrough Reels and a form asking budget first.</p></div>
+          </div>
+          <div class="cs-chart"><div class="bar" style="--h:10%"><small>Spend</small></div><div class="bar hi" style="--h:96%"><small>Revenue</small></div></div>
+          <div class="cs-m"><div><b>18x</b>return</div><div><b>9</b>projects</div><div><b>₹640</b>per lead</div></div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ROAS CALCULATOR -->
-  <section id="calc" class="calc">
-    <div class="calc-left">
-      <p class="kicker dark">( Play with it )</p>
-      <h2 class="h2">What could your<br>ads <i class="serif">make you?</i></h2>
-      <div class="field">
-        <div class="field-top"><label for="budget">Daily ad budget</label><output id="budgetOut">₹1,000</output></div>
-        <input type="range" id="budget" min="500" max="20000" step="500" value="1000">
-      </div>
-      <div class="field">
-        <div class="field-top"><label for="aov">Average order value</label><output id="aovOut">₹1,500</output></div>
-        <input type="range" id="aov" min="300" max="10000" step="100" value="1500">
-      </div>
-      <div class="field">
-        <label>Your industry</label>
-        <div class="seg" id="industry">
-          <button data-r="3.2" class="on">Fashion</button>
-          <button data-r="4.1">Jewellery</button>
-          <button data-r="3.6">Beauty</button>
-          <button data-r="4.6">Food</button>
-          <button data-r="2.8">Home</button>
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="wrap skills">
+      <div class="reveal">
+        <p class="eyebrow">Skills</p>
+        <h2 class="h2">What I bring to your team</h2>
+        <div class="meters" id="meters">
+          <div class="meter"><div class="m-top"><span>Campaign strategy &amp; structure</span><b>95%</b></div><div class="m-bar"><i style="--w:95%"></i></div></div>
+          <div class="meter"><div class="m-top"><span>Audience targeting</span><b>90%</b></div><div class="m-bar"><i style="--w:90%"></i></div></div>
+          <div class="meter"><div class="m-top"><span>Creative strategy &amp; ad copy</span><b>88%</b></div><div class="m-bar"><i style="--w:88%"></i></div></div>
+          <div class="meter"><div class="m-top"><span>Tracking: Pixel, CAPI, GA4</span><b>85%</b></div><div class="m-bar"><i style="--w:85%"></i></div></div>
+          <div class="meter"><div class="m-top"><span>Reporting &amp; analytics</span><b>90%</b></div><div class="m-bar"><i style="--w:90%"></i></div></div>
         </div>
       </div>
-    </div>
-    <div class="calc-right">
-      <div class="calc-card">
-        <small>Estimated monthly revenue</small>
-        <div class="calc-big" id="rev">₹0</div>
-        <div class="calc-row"><span>Monthly spend</span><b id="spend">₹0</b></div>
-        <div class="calc-row"><span>Estimated orders</span><b id="orders">0</b></div>
-        <div class="calc-row"><span>Target ROAS</span><b id="roas">0x</b></div>
-        <p class="fine">Estimate only, based on averages from past accounts after 60 days of optimisation. Your numbers depend on your product, offer and website.</p>
-        <a href="#contact" class="btn-dark magnetic">Make this real →</a>
+      <div class="skill-cards">
+        <div class="sk reveal"><div class="sk-ic">◎</div><h3>Campaigns</h3><p>Advantage+ Shopping, Catalogue, Lead Ads, Click-to-WhatsApp, Reach &amp; Awareness</p></div>
+        <div class="sk reveal"><div class="sk-ic">◇</div><h3>Audiences</h3><p>Custom audiences, lookalikes, broad targeting, exclusions and retargeting windows</p></div>
+        <div class="sk reveal"><div class="sk-ic">▣</div><h3>Creative</h3><p>Hooks, Reels scripts, UGC briefs, carousel stories and ad copy testing</p></div>
+        <div class="sk reveal"><div class="sk-ic">◔</div><h3>Analytics</h3><p>Attribution settings, GA4, UTM tracking, Looker Studio dashboards</p></div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES LIST -->
-  <section id="services" class="services">
-    <p class="kicker">( What I do )</p>
-    <ul class="svc-list" id="svcList">
-      <li data-img="g1"><span class="svc-n">01</span><span class="svc-t">Ad account audit</span><span class="svc-d">Find what's leaking money. Fix it first.</span><span class="svc-a">↗</span></li>
-      <li data-img="g2"><span class="svc-n">02</span><span class="svc-t">Pixel &amp; CAPI setup</span><span class="svc-d">Tracking that Meta actually trusts.</span><span class="svc-a">↗</span></li>
-      <li data-img="g3"><span class="svc-n">03</span><span class="svc-t">Creative strategy</span><span class="svc-d">Hooks, scripts and UGC that stop thumbs.</span><span class="svc-a">↗</span></li>
-      <li data-img="g4"><span class="svc-n">04</span><span class="svc-t">Scaling campaigns</span><span class="svc-d">More budget, same ROAS. The hard part.</span><span class="svc-a">↗</span></li>
-      <li data-img="g5"><span class="svc-n">05</span><span class="svc-t">Lead gen machines</span><span class="svc-d">Forms, WhatsApp ads, CRM hand off.</span><span class="svc-a">↗</span></li>
-    </ul>
-    <div class="svc-float" id="svcFloat"></div>
-  </section>
-
-  <!-- CREATIVES: PHONE FEED -->
-  <section id="creatives" class="creatives">
-    <div class="cr-head">
-      <p class="kicker">( Creative lab )</p>
-      <h2 class="h2">Built to stop<br>the <i class="serif">scroll.</i></h2>
-      <p class="cr-sub">Every week I test new hooks, angles and formats. Losers get cut in 72 hours. Winners get the budget.</p>
-    </div>
-    <div class="feeds">
-      <div class="feed"><div class="feed-track up">
-        <div class="post p1"><b>POV:</b> you finally found a chain that doesn't turn green</div>
-        <div class="post p2"><span>BEFORE → AFTER</span><b>21 days.</b></div>
-        <div class="post p3"><b>₹999</b><small>only this weekend</small></div>
-        <div class="post p4"><b>"I was skeptical..."</b><small>UGC · 0:22</small></div>
-        <div class="post p1"><b>POV:</b> you finally found a chain that doesn't turn green</div>
-        <div class="post p2"><span>BEFORE → AFTER</span><b>21 days.</b></div>
-        <div class="post p3"><b>₹999</b><small>only this weekend</small></div>
-        <div class="post p4"><b>"I was skeptical..."</b><small>UGC · 0:22</small></div>
-      </div></div>
-      <div class="feed"><div class="feed-track down">
-        <div class="post p5"><b>3BHK in 45 days.</b><small>Walkthrough Reel</small></div>
-        <div class="post p6"><span>STOP SCROLLING</span><b>if you're losing hair</b></div>
-        <div class="post p7"><b>Diwali gift</b><small>they'll actually use</small></div>
-        <div class="post p8"><b>12,000+</b><small>happy customers</small></div>
-        <div class="post p5"><b>3BHK in 45 days.</b><small>Walkthrough Reel</small></div>
-        <div class="post p6"><span>STOP SCROLLING</span><b>if you're losing hair</b></div>
-        <div class="post p7"><b>Diwali gift</b><small>they'll actually use</small></div>
-        <div class="post p8"><b>12,000+</b><small>happy customers</small></div>
-      </div></div>
-      <div class="feed hide-sm"><div class="feed-track up slow">
-        <div class="post p3"><b>Free shipping</b><small>ends midnight</small></div>
-        <div class="post p8"><span>3 reasons</span><b>founders switch to us</b></div>
-        <div class="post p2"><b>Pure Kashmiri saffron</b><small>lab tested</small></div>
-        <div class="post p6"><b>Fabric by the metre.</b><small>Free swatches</small></div>
-        <div class="post p3"><b>Free shipping</b><small>ends midnight</small></div>
-        <div class="post p8"><span>3 reasons</span><b>founders switch to us</b></div>
-        <div class="post p2"><b>Pure Kashmiri saffron</b><small>lab tested</small></div>
-        <div class="post p6"><b>Fabric by the metre.</b><small>Free swatches</small></div>
-      </div></div>
+  <!-- PLANNER -->
+  <section class="section dark">
+    <div class="wrap planner">
+      <div class="reveal">
+        <p class="eyebrow light">Interactive</p>
+        <h2 class="h2">Campaign <i class="serif">planner</i></h2>
+        <p class="sub">A small tool I built to show clients what a budget can realistically return. Move the sliders.</p>
+        <div class="field"><div class="f-top"><label for="budget">Daily budget</label><output id="budgetOut"></output></div><input type="range" id="budget" min="500" max="20000" step="500" value="1500"></div>
+        <div class="field"><div class="f-top"><label for="aov">Average order value</label><output id="aovOut"></output></div><input type="range" id="aov" min="300" max="10000" step="100" value="1500"></div>
+        <div class="field"><label>Industry</label>
+          <div class="seg" id="industry"><button data-r="3.2" class="on">Fashion</button><button data-r="4.1">Jewellery</button><button data-r="3.6">Beauty</button><button data-r="4.6">Food</button><button data-r="2.8">Home</button></div>
+        </div>
+      </div>
+      <div class="p-card reveal">
+        <small>Estimated monthly revenue</small>
+        <div class="p-big" id="rev">₹0</div>
+        <div class="p-row"><span>Monthly spend</span><b id="spend"></b></div>
+        <div class="p-row"><span>Estimated orders</span><b id="orders"></b></div>
+        <div class="p-row"><span>Benchmark ROAS</span><b id="roas"></b></div>
+        <p class="fine">Estimate based on typical results after 60 days of optimisation. Actual results depend on product, offer and website.</p>
+      </div>
     </div>
   </section>
 
-  <!-- TESTIMONIAL -->
-  <section class="quote">
-    <p class="kicker">( Client words )</p>
-    <div class="q-wrap">
-      <blockquote id="qText">"First time the ad report matched what we saw in Shopify. We doubled budget in month two."</blockquote>
-      <cite id="qWho">Founder, D2C jewellery brand</cite>
-      <div class="q-dots" id="qDots"><button class="on"></button><button></button><button></button></div>
+  <!-- CERTIFICATIONS -->
+  <section class="section soft">
+    <div class="wrap">
+      <div class="head reveal"><p class="eyebrow">Certifications</p><h2 class="h2">Learning never stops</h2></div>
+      <div class="certs">
+        <div class="cert reveal"><div class="c-logo meta">M</div><div><h3>Meta Certified Digital Marketing Associate</h3><p>Meta Blueprint · 2024</p></div></div>
+        <div class="cert reveal"><div class="c-logo meta">M</div><div><h3>Meta Certified Media Buying Professional</h3><p>Meta Blueprint · 2024</p></div></div>
+        <div class="cert reveal"><div class="c-logo g">G</div><div><h3>Google Analytics Certification</h3><p>Google Skillshop · 2023</p></div></div>
+        <div class="cert reveal"><div class="c-logo g">G</div><div><h3>Google Ads Search Certification</h3><p>Google Skillshop · 2023</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="wrap">
+      <div class="head reveal center"><p class="eyebrow">Recommendations</p><h2 class="h2">What people say</h2></div>
+      <div class="quote reveal">
+        <div class="q-mark">“</div>
+        <blockquote id="qText">First time our ad report matched what we saw in Shopify. Clear, honest and always on top of the numbers.</blockquote>
+        <div class="q-who"><div class="q-av" id="qAv">R</div><div><b id="qName">Client Name</b><small id="qRole">Founder, D2C jewellery brand</small></div></div>
+        <div class="q-dots" id="qDots"><button class="on"></button><button></button><button></button></div>
+      </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <h2 class="giant">Let's<br><i class="serif">scale</i> it.</h2>
-    <div class="contact-grid">
-      <form class="form" id="contactForm">
-        <input name="name" required placeholder="Your name*">
-        <input name="site" placeholder="Brand website">
-        <select name="budget">
-          <option>Monthly budget: under ₹30K</option>
-          <option>₹30K to ₹1L</option>
-          <option>₹1L to ₹5L</option>
-          <option>₹5L+</option>
-        </select>
-        <textarea name="msg" rows="3" placeholder="What do you want to grow?"></textarea>
-        <button class="btn-dark magnetic" type="submit">Send it on WhatsApp →</button>
+  <section id="contact" class="section contact">
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        <p class="eyebrow light">Contact</p>
+        <h2 class="h2">Let's work <i class="serif">together.</i></h2>
+        <p class="sub">I'm currently open to full-time performance marketing roles. Happy to share detailed case studies and account screenshots in an interview.</p>
+        <div class="c-list">
+          <a href="mailto:hello@example.com" class="c-item"><span>Email</span>hello@example.com</a>
+          <a href="https://www.linkedin.com/" class="c-item" target="_blank" rel="noopener"><span>LinkedIn</span>linkedin.com/in/yourname</a>
+          <a href="tel:+910000000000" class="c-item"><span>Phone</span>+91 00000 00000</a>
+        </div>
+      </div>
+      <form class="form reveal" id="contactForm">
+        <div class="row2">
+          <label>Name<input name="name" required placeholder="Your name"></label>
+          <label>Company<input name="company" placeholder="Company name"></label>
+        </div>
+        <label>Email<input name="email" type="email" required placeholder="you@company.com"></label>
+        <label>Message<textarea name="msg" rows="4" placeholder="Tell me about the role"></textarea></label>
+        <button class="btn btn-full magnetic" type="submit">Send message →</button>
         <p class="form-note" id="formNote"></p>
       </form>
-      <div class="contact-side">
-        <a href="mailto:hello@example.com" class="c-link">hello@example.com ↗</a>
-        <a href="https://wa.me/910000000000" class="c-link">WhatsApp ↗</a>
-        <a href="#" class="c-link">Instagram ↗</a>
-        <a href="#" class="c-link">LinkedIn ↗</a>
-        <p>HSR Layout, Bengaluru<br>Replies within 24 hours</p>
-      </div>
     </div>
   </section>
 </main>
 
 <footer class="footer">
-  <div class="foot-big">STEINS</div>
-  <div class="foot-row"><span>© <span id="year"></span> Meta Ads Specialist</span><span id="clock"></span><a href="#top">Back to top ↑</a></div>
+  <div class="wrap foot">
+    <a href="#top" class="logo">Steins<span>.</span></a>
+    <span>© <span id="year"></span> · Performance Marketer, Bengaluru</span>
+    <a href="#top" class="to-top">Back to top ↑</a>
+  </div>
 </footer>
 
 <script src="script.js"></script>

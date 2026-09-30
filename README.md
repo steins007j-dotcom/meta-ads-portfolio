@@ -1,10 +1,13 @@
 # Meta Ads Portfolio
 
-A one page portfolio for a Meta Ads (Facebook and Instagram) specialist. Plain HTML, CSS and JS, no build step. Hosted on GitHub Pages.
+A professional one page portfolio for a performance marketer (Meta Ads), built for job applications. Plain HTML, CSS and JS, no build step. Hosted on GitHub Pages.
+
+- Main site (professional): `/`
+- Bold agency-style version: `/bold/`
 
 ## Files
 
-- `index.html` : all the content (hero, case studies, services, ad creatives, process, testimonials, contact)
+- `index.html` : all the content (hero, about, experience, case studies, skills, planner, certifications, recommendations, contact)
 - `styles.css` : design. Colours are at the top under `:root`
 - `script.js` : menu, scroll animations, number counters, case study filter, contact form
 
@@ -12,12 +15,12 @@ A one page portfolio for a Meta Ads (Facebook and Instagram) specialist. Plain H
 
 The site ships with sample content. Swap these for your real details:
 
-1. Name and logo text (`steins.` in the nav and footer)
-2. Hero stats and the dashboard card numbers
-3. The six case studies (numbers, descriptions, categories in `data-cat`)
-4. Ad creative mockups (brand names, copy)
-5. Testimonials
-6. Email and WhatsApp number in the contact section and in `script.js` (`910000000000`)
+1. Experience timeline: job titles, dates, the second company and your college
+2. Stats and case study numbers: use your real results
+3. Certifications: keep only the ones you actually hold
+4. Recommendations: real names and quotes (in `script.js`, `quotes`)
+5. Email, LinkedIn and phone in the contact section, and the email in `script.js`
+6. Add your CV as `resume.pdf` in this folder. Until then the CV buttons scroll to Contact
 
 ## Run locally
 
